@@ -1,0 +1,52 @@
+baseURL = "http://hambsd.org/"
+languageCode = "en-us"
+title = "HamBSD"
+theme = "hambsd"
+[menu]
+[[menu.abouthambsd]]
+name = "Project Goals"
+url = "/goals/"
+weight = 2
+[[menu.abouthambsd]]
+name = "HamPKI"
+url = "/hampki/"
+weight = 2
+[[menu.abouthambsd]]
+name = "Events and Papers"
+url = "/events/"
+weight = 2
+[[menu.abouthambsd]]
+name = "Press"
+url = "/press/"
+weight = 2
+[[menu.abouthambsd]]
+name = "MB7UAR"
+url = "/mb7uar/"
+weight = 2
+[[menu.abouthambsd]]
+name = "MB7VX"
+url = "/mb7vx/"
+weight = 2
+
+[[menu.gettingsource]]
+name = "Get Source Code"
+url = "/code/"
+weight = 2
+
+[[menu.resources]]
+name = "Manual Pages"
+url = "https://man.hambsd.org/hamintro.7"
+weight = 2
+[[menu.resources]]
+name = "FAQ"
+url = "/faq/"
+weight = 2
+
+[[menu.support]]
+name = "Liberapay"
+url = "https://liberapay.com/hambsd/"
+weight = 2
+[[menu.support]]
+name = "Hardware Wanted"
+url = "/want/"
+weight = 2

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+{{- partial "head.html" . -}}
+<body>
+
+<table id="project-main" class="not-openbsd">
+    <tr class="align-top">
+        <td>
+            <h3>About HamBSD</h3>
+            <ul>
+                {{ range .Site.Menus.abouthambsd }}
+                <li><a class="nav-link" href="{{ .URL }}">
+                    {{ $text := print .Name | safeHTML }}{{ $text }}
+                </a></li>
+                {{ end }}
+            </ul>
+            <h3>Getting Source</h3>
+
+                {{ range .Site.Menus.gettingsource }}
+                <li><a class="nav-link" href="{{ .URL }}">
+                    {{ $text := print .Name | safeHTML }}{{ $text }}
+                </a></li>
+            </ul>
+            {{ end }}
+            <h3>HamBSD Resources</h3>
+            <ul>
+                {{ range .Site.Menus.resources }}
+                <li><a class="nav-link" href="{{ .URL }}">
+                   {{ $text := print .Name | safeHTML }}{{ $text }}
+                </a></li>
+                {{ end }}
+            </ul>
+            <h3>Supporting HamBSD</h3>
+            <ul>
+                {{ range .Site.Menus.support }}
+                <li><a class="nav-link" href="{{ .URL }}">
+                    {{ $text := print .Name | safeHTML }}{{ $text }}
+                </a></li>
+                {{ end }}
+            </ul>
+        <td>
+            <h1 class="header">
+                <img src="logos/hambsd-scaled.png" height=227 width=400 alt="[HamBSD]">
+            </h1>
+            <p id="current-status">
+                Current status:
+                <br>
+                It is possible to run a <a href="faq-aprs.html">receive-only IGate</a> using a
+                <a href="faq-tnc.html">KISS TNC</a>.
+            <p id="current-goal">
+                Current goal:
+                <br>
+                Continue to improve <a href="https://man.hambsd.org/aprsd.8">aprsd(8)</a> and
+                <a href="https://man.hambsd.org/aprsisd.8">aprsisd(8)</a> to enable use as a
+                digipeater and bi-directional IGate.
+
+            <p>
+                The HamBSD project aims to bring amateur packet radio to <a
+                    href="https://openbsd.org">OpenBSD</a>, including support for TCP/IP over <a
+                    href="https://www.tapr.org/pdf/AX25.2.2.pdf">AX.25</a> and <a
+                    href="http://www.aprs.org/">APRS</a> tracking/digipeating in the base system.
+
+            <p>
+                HamBSD will not provide a full AX.25 stack but instead only implement support
+                for UI frames. There will be a focus on simplicity, security and readable code.
+
+            <p>
+                The amateur radio community needs a reliable platform for packet radio for use
+                in both leisure and emergency scenarios. It should be expected that the system
+                is stable and resilient (but as yet it is neither).
+    <tr class="align-bottom">
+        <td>
+            <a href="first-crash.png">
+                <img width="60" src="first-crash.png" alt="first-crash"></a>
+        <td>
+            <hr>
+            For monthly updates on HamBSD development, please support the project on
+            <a href="https://patreon.com/fossirl">Patreon</a>.
+</table>
+</table>
+</body>
+</html>
